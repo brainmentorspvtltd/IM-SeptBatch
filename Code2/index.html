@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/logic.js">
+    </script>
+    <script src="js/controller.js"></script>
+</head>
+
+<body>
+    <h1>Calc App</h1>
+
+    <table>
+        <tr>
+            <td><label for="">First Number</label></td>
+            <td><input id="firstnumber" type="text" placeholder="Type First Number"></td>
+        </tr>
+        <tr>
+            <td><label for="">Second Number</label></td>
+            <td><input id="secondnumber" type="text" placeholder="Type Second Number"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td><button data-sign="+" data-opr="add">Add</button></td>
+                        <td><button data-sign="-" data-opr="sub">-</button></td>
+                        <td><button data-sign="*" data-opr="mul">*</button></td>
+                        <td><button data-sign="/" data-opr="div">/</button></td>
+                    </tr>
+                </table>
+
+            </td>
+
+
+        </tr>
+    </table>
+    <h3>Result is <span id="result"></span> </h3>
+</body>
+
+</html>
