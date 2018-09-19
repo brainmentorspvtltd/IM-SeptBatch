@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="css/design.css">
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/item.js"></script>
+    <script src="js/itemoperations.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+
+<body>
+    <h3>Crud App</h3>
+    <fieldset>
+        <legend>Item Details</legend>
+        <table>
+            <tr>
+                <td><label for="">Id</label></td>
+                <td><label id="id"></label></td>
+            </tr>
+            <tr>
+                <td><label for="">Name</label></td>
+                <td><input type="text" id="name" placeholder="Type Item Name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Desc</label></td>
+                <td><textarea id="desc" rows="10" cols="20" placeholder="Type Item Name"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="">Color</label></td>
+                <td><input type="color" id="color"></td>
+            </tr>
+            <tr>
+                <td><label for="">Date</label></td>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <td><label for="">Price</label></td>
+                <td><input type="range" id="price" min="1" max="1000"></td>
+            </tr>
+            <tr>
+                <td><label for="">Url</label></td>
+                <td><input type="url" id="url"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <!--table>tr>(td>button)*9 -->
+    <table>
+        <tr>
+            <td><button id="add">Add</button></td>
+            <td><button id="delete">Delete</button></td>
+            <td><button>Search</button></td>
+            <td><button>Update</button></td>
+            <td><button>Sort</button></td>
+            <td><button>Save</button></td>
+            <td><button>Load</button></td>
+            <td><button>Load from Server</button></td>
+            <td><button>Clear All</button></td>
+        </tr>
+    </table>
+    <h3>Total Records <span id="total"></span> Mark Records <span id="mark"></span> UnMark Records <span id="unmark"></span></h3>
+    <fieldset>
+        <legend>Item List</legend>
+        <!--table>thead>td*6 -->
+        <table border="1" cellpadding="2" cellspacing="4">
+            <thead>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Desc</td>
+                <td>Color</td>
+                <td>Date</td>
+                <td>Price</td>
+                <td>URL</td>
+                <td>Operations</td>
+            </thead>
+            <tbody id="items"></tbody>
+        </table>
+    </fieldset>
+</body>
+
+</html>
