@@ -1,0 +1,137 @@
+async function cube(a){
+var pr = new Promise((resolve, reject)=>{
+setTimeout(()=>{
+	resolve("Cube of "+a+" is "+(a**3)");
+},4000);
+})
+return pr;
+}
+VM460:4 Uncaught SyntaxError: Invalid or unexpected token
+ function async cube(a){
+var pr = new Promise((resolve, reject)=>{
+setTimeout(()=>{
+	resolve("Cube of "+a+" is "+(a**3)");
+},4000);
+})
+return pr;
+}
+VM471:1 Uncaught SyntaxError: Unexpected identifier
+async function cube(a) {
+            var pr = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    
+                    resolve("Cube of " + a + " is " + (a ** 3));
+                }, 4000);
+            })
+            return pr;
+        }
+undefined
+Promise.all([cube(2), cube(3), cube(4)]).then(response=>{
+console.log("Response is ",response);
+}).catch(err=>{
+console.log("Err is ",err);
+});
+Promise {<pending>}
+VM839:2 Response is  (3) ["Cube of 2 is 8", "Cube of 3 is 27", "Cube of 4 is 64"]
+async function cube(a) {
+console.log("A is ",a);
+            var pr = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    
+                    resolve("Cube of " + a + " is " + (a ** 3));
+                }, 4000);
+            })
+            return pr;
+        }
+undefined
+Promise.all([cube(2), cube(3), cube(4)]).then(response=>{
+console.log("Response is ",response);
+}).catch(err=>{
+console.log("Err is ",err);
+});
+VM878:2 A is  2
+VM878:2 A is  3
+VM878:2 A is  4
+Promise {<pending>}
+VM881:2 Response is  (3) ["Cube of 2 is 8", "Cube of 3 is 27", "Cube of 4 is 64"]
+Promise.all([cube(2), cube(3), cube(4)]).then(response=>{
+console.log("Response is ",response);
+}).catch(err=>{
+console.log("Err is ",err);
+});
+VM878:2 A is  2
+VM878:2 A is  3
+VM878:2 A is  4
+Promise {<pending>}
+Promise.all([cube(2), cube(3), cube(4)]).then(response=>{
+console.log("Response is ",response);
+}).catch(err=>{
+console.log("Err is ",err);
+});
+VM878:2 A is  2
+VM878:2 A is  3
+VM878:2 A is  4
+Promise {<pending>}
+Promise.all([cube(2), cube(3), cube(4)]).then(response=>{
+console.log("Response is ",response);
+}).catch(err=>{
+console.log("Err is ",err);
+});
+VM878:2 A is  2
+VM878:2 A is  3
+VM878:2 A is  4
+Promise {<pending>}
+Promise.all([cube(2), cube(3), cube(4)]).then(response=>{
+console.log("Response is ",response);
+}).catch(err=>{
+console.log("Err is ",err);
+});
+VM878:2 A is  2
+VM878:2 A is  3
+VM878:2 A is  4
+Promise {<pending>}
+VM889:2 Response is  (3) ["Cube of 2 is 8", "Cube of 3 is 27", "Cube of 4 is 64"]
+Promise.all([cube(2), cube(3), cube(4)]).then(response=>{
+console.log("Response is ",response);
+}).catch(err=>{
+console.log("Err is ",err);
+});
+VM878:2 A is  2
+VM878:2 A is  3
+VM878:2 A is  4
+Promise {<pending>}
+VM891:2 Response is  (3) ["Cube of 2 is 8", "Cube of 3 is 27", "Cube of 4 is 64"]
+VM893:2 Response is  (3) ["Cube of 2 is 8", "Cube of 3 is 27", "Cube of 4 is 64"]
+VM895:2 Response is  (3) ["Cube of 2 is 8", "Cube of 3 is 27", "Cube of 4 is 64"]
+VM898:2 Response is  (3) ["Cube of 2 is 8", "Cube of 3 is 27", "Cube of 4 is 64"]
+Promise.all([cube(2), cube(3), cube(4)]).then(response=>{
+console.log("Response is ",response);
+}).catch(err=>{
+console.log("Err is ",err);
+});
+VM878:2 A is  2
+VM878:2 A is  3
+VM878:2 A is  4
+Promise {<pending>}
+VM909:2 Response is  (3) ["Cube of 2 is 8", "Cube of 3 is 27", "Cube of 4 is 64"]
+async function cube(a) {
+console.log("A is ",a);
+            var pr = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(a**3);
+                    //resolve("Cube of " + a + " is " + (a ** 3));
+                }, 4000);
+            })
+            return pr;
+        }
+undefined
+async function sum(){
+	return await cube(2) + await cube(3) + await cube(4);
+}
+undefined
+sum().then(response=>console.log("Sum is",response)).catch(err=>console.log("Error is ",err));
+VM1071:2 A is  2
+Promise {<pending>}
+VM1071:2 A is  3
+VM1071:2 A is  4
+VM1404:1 Sum is 99
