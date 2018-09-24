@@ -1,0 +1,21 @@
+{
+    "items": [{
+        "id": "1",
+        "name": "fsdfd",
+        "desc": "fsdfsdfsdf",
+        "price": "5500",
+        "color": "#000000",
+        "date": "2018-08-07",
+        "url": "http://www.abcd.com",
+        "markForDelete": false
+    }, {
+        "id": "2",
+        "name": "fsdfd",
+        "desc": "fsdfsdfsdf",
+        "price": "5500",
+        "color": "#000000",
+        "date": "2018-08-07",
+        "url": "http://www.abcd.com",
+        "markForDelete": false
+    }]
+}

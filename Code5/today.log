@@ -1,0 +1,90 @@
+Abc.html:63 Live reload enabled.
+var buttons = document.getElementsByTagName("button");
+undefined
+typeof(buttons);
+"object"
+buttons instanceof Array;
+false
+buttons;;
+HTMLCollection(9) [button, button, button, button, button, button, button, button, button]
+buttons.forEach
+undefined
+var x= [10,20,30,40,50];
+undefined
+x.forEach;
+ƒ forEach() { [native code] }
+function whoAmI(){
+console.log("Name is "+this.name);
+}
+undefined
+whoAmI();
+VM566:2 Name is 
+undefined
+window.whoAmI();
+VM566:2 Name is 
+undefined
+window.name = "Amit";
+"Amit"
+name;
+"Amit"
+whoAmI();
+VM566:2 Name is Amit
+undefined
+var obj = {
+name:'Ram'
+}
+undefined
+obj.whoAmI();
+VM812:1 Uncaught TypeError: obj.whoAmI is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM812:1
+whoAmI();
+VM566:2 Name is Amit
+undefined
+whoAmI;
+ƒ whoAmI(){
+console.log("Name is "+this.name);
+}
+whoAmI.apply(obj);
+VM566:2 Name is Ram
+undefined
+whoAmI.call(obj);
+VM566:2 Name is Ram
+undefined
+function whoAmI(address,gender){
+console.log("Name is "+this.name+" Address "+address+" Gender "+gender);
+}
+undefined
+whoAmI.apply(obj,['Delhi','male']);
+VM1233:2 Name is Ram Address Delhi Gender male
+undefined
+whoAmI.call(obj,'Delhi','male');
+VM1233:2 Name is Ram Address Delhi Gender male
+undefined
+var d  = whoAmI.bind(obj);
+undefined
+d('Delhi','male');
+VM1233:2 Name is Ram Address Delhi Gender male
+undefined
+buttons;
+HTMLCollection(9) [button, button, button, button, button, button, button, button, button]
+Array.prototype.forEach.call(buttons,button=>{
+console.log(button);
+})
+// buttons.forEach(currentValue=>)
+VM1723:2 <button>​</button>​
+VM1723:2 <button>​</button>​
+VM1723:2 <button>​</button>​
+VM1723:2 <button>​</button>​
+VM1723:2 <button>​</button>​
+VM1723:2 <button>​</button>​
+VM1723:2 <button>​</button>​
+VM1723:2 <button>​</button>​
+VM1723:2 <button>​</button>​
+undefined
+VM5661:1 POST https://the-extension.com/stats?hash=ker87w3mwr4zpbhr06uoez5mi&eventCategory=eval&eventAction=error&eventLabel=parseResponse 0 ()
+(anonymous) @ VM5661:1
+(anonymous) @ VM5661:1
+VM5661:1 XHR failed loading: POST "https://the-extension.com/stats?hash=ker87w3mwr4zpbhr06uoez5mi&eventCategory=eval&eventAction=error&eventLabel=parseResponse".
+(anonymous) @ VM5661:1
+(anonymous) @ VM5661:1

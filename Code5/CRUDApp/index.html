@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache/app.manifest">
+<!-- <html lang="en"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="css/design.css">
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/item.js"></script>
+    <script src="js/itemoperations.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2> <span id="status"></span> CRUD App Time Spend :: <span id="timespend"></span></h2>
+        <div id="map"></div>
+    </header>
+    <div id="audio">
+        <audio id="audioplayer" src="audio/sound.mp3" type="audio/mp3"></audio>
+    </div>
+    <section>
+        <table>
+            <tr>
+                <td><label for="">Id</label></td>
+                <td><label id="itemid"></td>
+            </tr>
+            <tr>
+                <td><label for="">Name</label></td>
+                <td><input type="text" placeholder="Type Name Here" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Desc</label></td>
+                <td><textarea placeholder="Type Desc Here" id="desc" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="">Price</label></td>
+                <td><input step="1" type="range" id="price" value="1" max="1000">
+                    <output id="output"></output>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Color</label></td>
+                <td><input id="color" type="color"></td>
+            </tr>
+            <tr>
+                <td><label for="">Date</label></td>
+                <td><input id="date" type="date"></td>
+            </tr>
+            <tr>
+                <td><label for="">URL</label></td>
+                <td><input value="http://www.abcd.com" id="url" type="url"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><button id="add">Add</button></td>
+                            <td><button id="delete">Delete</button></td>
+                            <td><button>Search</button></td>
+                            <td><button>Update</button></td>
+                            <td><button>Sort</button></td>
+                            <td><button id="save">Save</button></td>
+                            <td><button id="load">Load</button></td>
+                            <td><button>ClearAll</button></td>
+                            <td><button id="loadfromserver">Load From Server</button></td>
+                            <td><button id="gps">Show GPS</button></td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <h3>Total Records <span id="total"></span> Mark Records <span id="mark"></span> UnMark Records <span id="unmark"></span></h3>
+    <img id="trash" src="images/trash.png" alt="Trash" title="Drag Records to Delete">
+    <fieldset>
+        <legend>Item Details</legend>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Desc</td>
+                    <td>Price</td>
+                    <td>Color</td>
+                    <td>Date</td>
+                    <td>URL</td>
+                    <td>Operations</td>
+                </tr>
+            </thead>
+            <tbody id="itemlist">
+
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+
+</html>

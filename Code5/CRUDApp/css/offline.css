@@ -1,0 +1,19 @@
+.size {
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: lightskyblue;
+}
+
+h2 {
+    background-color: lightblue;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
