@@ -1,0 +1,117 @@
+body {
+    margin: 0px;
+}
+
+
+/* @media(max-width:1200px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+} */
+
+@media(max-width:1200px) and (min-width:768px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+@media(max-width:992px) {
+    .row {
+        display: block;
+    }
+}
+
+#header {
+    background-color: lightblue;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    top: 0px;
+}
+
+#header h3 {
+    margin: 0px;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+@media(max-width:992px) {
+    .column {
+        width: 100%;
+    }
+}
+
+#content {
+    margin-top: 120px;
+}
+
+#content input {
+    height: 30px;
+}
+
+#content input,
+#content textarea {
+    width: 90%;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+#content table {
+    width: 100%;
+}
+
+#content .col-1 button {
+    background-color: #2874F0;
+    border: 1px solid;
+    padding: 10px;
+    color: #fff;
+}
+
+#content .col-2 table img {
+    width: 50%;
+}
+
+#content .col-2 table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+#content .col-2 table tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+#content .col-2 table td {
+    padding: 15px;
+}
+
+@media(max-width: 992px) {
+    #content .col-2 table img {
+        width: 20%;
+    }
+}
+
+
+/* .size {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+} */
+
+.red {
+    background-color: red;
+}

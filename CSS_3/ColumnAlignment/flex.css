@@ -1,0 +1,30 @@
+#parent {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+}
+
+.column {
+    background-color: lightgray;
+    padding: 10px;
+    border: 2px solid red;
+}
+
+img {
+    width: 100%;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 40%;
+}
+
+.col-3 {
+    width: 25%;
+}
